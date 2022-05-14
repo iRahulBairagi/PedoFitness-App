@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:progressDrawable">@drawable/round_progress</item>
+        <item name="android:indeterminateDrawable">@drawable/round_progress</item>
+    </style>
+    <style name="Theme.PedoFitness.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Define other styles to fix theme -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
 </resources>

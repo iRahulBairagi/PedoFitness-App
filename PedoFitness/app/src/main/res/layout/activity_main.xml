@@ -1,28 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:background="@color/white"
+    android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
 
-
-
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progress"
+
+        style="@style/ProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:progress="75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343"
+        tools:srcCompt=" @tool:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:indeterminateOnly="false"
-        android:progressDrawable="@drawable/custom_progress"/>
-
-    <Button
-        android:id="@+id/startProgess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Progress"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="STEP COUNT"
         android:textAllCaps="false"
-        android:layout_marginTop="16dp"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#EC3131"
+        android:textColorLink="#8F0F0F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/wave1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <!--        android:background="@drawable/background"--><![CDATA[
+<!--    android:title="GeeksForGeeks" />-->
+
+    ]]><!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        app:shapeAppearanceOverlay = "@style/RoundImage"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/progress"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/progress"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/progress"/>-->
 
 
-</LinearLayout>
+    <!--        tools:layout_editor_absoluteX="190dp"-->
+    <!--        tools:layout_editor_absoluteY="155dp" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
