@@ -42,6 +42,8 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView8
+id textView9
 id toolbar
 layout activity_main
 layout myabout
