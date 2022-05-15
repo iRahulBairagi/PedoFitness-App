@@ -31,4 +31,5 @@
         android:id="@+id/about"
         android:icon="@drawable/ic_baseline_directions_run_24"
         android:title="About"></item>
+    <item android:title="Refresh" />
 </menu>
