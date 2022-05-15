@@ -13,16 +13,16 @@
         android:id="@+id/progress"
 
         style="@style/ProgressBar"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="239dp"
+        android:layout_height="234dp"
         android:layout_marginEnd="16dp"
         android:progress="75"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368"
+        app:layout_constraintVertical_bias="0.237"
         tools:srcCompt=" @tool:sample/avatars" />
 
     <TextView
@@ -44,10 +44,10 @@
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.334" />
 
     <Toolbar
         android:id="@+id/toolbar"
@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="55dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -80,8 +80,9 @@
         android:id="@+id/textView2"
         android:layout_width="89dp"
         android:layout_height="39dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="CALORI"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FF5722"
@@ -90,7 +91,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.861" />
@@ -139,22 +140,10 @@
         app:layout_constraintVertical_bias="0.781"
         app:srcCompat="@drawable/make_final_distance" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="108dp"
-        android:layout_height="87dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/make_calori_final_2" />
-
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="71dp"
-        android:layout_height="51dp"
+        android:layout_width="64dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,6 +152,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/pause_4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        app:srcCompat="@drawable/fire2" />
 
     <!--        android:background="@drawable/background"--><![CDATA[
 <!--    android:title="GeeksForGeeks" />-->

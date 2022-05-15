@@ -11,6 +11,7 @@ color white
 drawable bg
 drawable bg2
 drawable bg3
+drawable fire2
 drawable ic_baseline_account_circle_24
 drawable ic_baseline_add_task_24
 drawable ic_baseline_directions_run_24
@@ -31,8 +32,8 @@ id about
 id goal
 id home
 id imageButton2
+id imageView
 id imageView4
-id imageView8
 id profile
 id progress
 id report

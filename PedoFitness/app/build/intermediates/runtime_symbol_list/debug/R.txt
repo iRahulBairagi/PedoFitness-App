@@ -2464,6 +2464,7 @@ int drawable design_ic_visibility 0x7f070064
 int drawable design_ic_visibility_off 0x7f070065
 int drawable design_password_eye 0x7f070066
 int drawable design_snackbar_background 0x7f070067
+int drawable fire2 0x7f0700ae
 int drawable ic_baseline_account_circle_24 0x7f070068
 int drawable ic_baseline_add_task_24 0x7f070069
 int drawable ic_baseline_directions_run_24 0x7f07006a
@@ -2762,8 +2763,8 @@ int id ignore 0x7f0800e0
 int id ignoreRequest 0x7f0800e1
 int id image 0x7f0800e2
 int id imageButton2 0x7f0801f6
+int id imageView 0x7f0801f9
 int id imageView4 0x7f0800e3
-int id imageView8 0x7f0801f5
 int id immediateStop 0x7f0800e5
 int id included 0x7f0800e6
 int id info 0x7f0800e7
