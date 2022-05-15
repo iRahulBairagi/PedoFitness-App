@@ -2490,6 +2490,9 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable make_calori_final_2
+drawable make_final_distance
+drawable make_pause_final
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2524,9 +2527,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pause_4
 drawable round_progress
 drawable test_custom_background
 drawable test_level_drawable
+drawable text_calori
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable wave1
@@ -2757,6 +2762,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton2
+id imageView4
+id imageView8
 id immediateStop
 id included
 id info
@@ -2976,7 +2984,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
