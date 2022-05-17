@@ -4,7 +4,7 @@
     <item
         android:id="@+id/home1"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Trial"
+        android:title="Home"
         android:visible="true"
         app:showAsAction="withText"/>
 
