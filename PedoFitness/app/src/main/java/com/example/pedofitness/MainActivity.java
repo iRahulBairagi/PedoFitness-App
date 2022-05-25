@@ -2,10 +2,7 @@ package com.example.pedofitness;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,26 +13,21 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private long pressedTime;
-    // creating menu-------------
+    public HomeFragment hf = new HomeFragment();
 
+    // creating menu-------------
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
-            case R.id.home:
-                setContentView(R.layout.activity_main);
+            case R.id.home1:
+                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
                 return true;
-//            case R.id.goal:
-//                setContentView(R.layout.mygoal);
-//                return true;
-//            case R.id.profile:
-//                setContentView(R.layout.myprofile);
-//                return true;
-//            case R.id.report:
-//                setContentView(R.layout.myreport);
-//                return true;
             case R.id.about:
                 setContentView(R.layout.myabout);
+                return true;
+            case R.id.restart:
+                hf.restart();
                 return true;
             default:
                 return true;
@@ -49,16 +41,34 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    //creating fragment-----
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        replaceFragment(hf);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        NavController navController = Navigation.findNavController(this, R.id.main_fragment);
-        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+        bottomNavigationView.setSelectedItemId(R.id.main_fragment);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.home) {
+                replaceFragment(new HomeFragment());
+            }
+            if (id == R.id.report) {
+                replaceFragment(new ReportFragment());
+            }
+            if(id==R.id.profile){
+                replaceFragment(new ProfileFragment());
+            }
+
+            return true;
+        });
+    }
+    private void replaceFragment (Fragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment,fragment).commit();
     }
 
-    @Override
+    //creating double click to exit-----
     public void onBackPressed() {
         if (pressedTime + 2000 > System.currentTimeMillis()) {
             super.onBackPressed();
@@ -69,4 +79,5 @@ public class MainActivity extends AppCompatActivity {
         pressedTime = System.currentTimeMillis();
     }
 }
+
 

@@ -2684,7 +2684,6 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottom_nav
 id bottom_navigation
 id bounce
 id bounceBoth
@@ -2692,6 +2691,9 @@ id bounceEnd
 id bounceStart
 id buttonPanel
 id cache_measures
+id cal
+id cal_cnt
+id cal_img
 id callMeasure
 id cancel_action
 id cancel_button
@@ -2734,7 +2736,9 @@ id currentState
 id custom
 id customPanel
 id cut
+id date
 id date_picker_actions
+id day
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2749,6 +2753,9 @@ id design_navigation_view
 id dialog_button
 id dimensions
 id direct
+id dis
+id dis_cnt
+id dis_img
 id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
@@ -2820,9 +2827,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton2
-id imageView
-id imageView4
 id immediateStop
 id included
 id info
@@ -2942,6 +2946,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pause_img
 id peekHeight
 id percent
 id pin
@@ -2955,6 +2960,7 @@ id radio
 id ratio
 id rectangles
 id report
+id restart
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3022,6 +3028,8 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
+id step
+id step_cnt
 id stop
 id stretch
 id submenuarrow
@@ -3052,14 +3060,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
-id textView3
-id textView4
-id textView5
-id textView6
-id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3311,7 +3311,6 @@ menu example_menu2
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
-navigation bottom_nav
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
