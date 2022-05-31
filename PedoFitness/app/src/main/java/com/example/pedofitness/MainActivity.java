@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.home1:
                 Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.about:
-                setContentView(R.layout.myabout);
-                return true;
             case R.id.restart:
                 hf.restart();
                 return true;

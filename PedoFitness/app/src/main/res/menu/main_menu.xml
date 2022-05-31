@@ -7,11 +7,10 @@
         android:title="Home"
         android:visible="true"
         app:showAsAction="withText"/>
-    <item
-        android:id="@+id/about"
-        android:icon="@drawable/ic_baseline_directions_run_24"
-        android:title="About"/>
+
     <item
         android:id="@+id/restart"
-        android:title="Restart"/>
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="Restart"
+        app:showAsAction="ifRoom" />
 </menu>
