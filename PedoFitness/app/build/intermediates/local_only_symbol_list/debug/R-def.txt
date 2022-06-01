@@ -21,6 +21,7 @@ drawable ic_baseline_refresh_24
 drawable ic_baseline_tag_faces_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable log
 drawable make_calori_final_2
 drawable make_final_distance
 drawable make_pause_final
